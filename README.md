@@ -8,7 +8,7 @@ Esta ferramenta deve ser utilizada somente em redes e sistemas onde você possui
 Clone o repositório e instale as dependências:
 
 ```bash
-git clone https://github.com/seu-usuario/ssh_brute_force.git
+git clone https://github.com/svenKing0/ssh_brute_force.git
 cd ssh_brute_force
 pip install -r requirements.txt
 

